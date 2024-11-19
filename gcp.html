@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Integration</title>
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+</head>
+<body>
+  <h1>Chatbot Integration Example</h1>
+  <p>This is an example of embedding a chatbot using Dialogflow Messenger.</p>
+  
+  <df-messenger
+    project-id="high-essence-440208-b8"
+    agent-id="6a8f9d7e-aae2-489e-acc9-8c78b6f9b49c"
+    language-code="en"
+    max-query-length="-1">
+  </df-messenger>
+
+  <style>
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      --df-messenger-font-color: #000;
+      --df-messenger-font-family: Google Sans;
+      --df-messenger-chat-background: #f3f6fc;
+      --df-messenger-message-user-background: #d3e3fd;
+      --df-messenger-message-bot-background: #fff;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      width: 350px;
+    }
+  </style>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+</body>
+</html>
